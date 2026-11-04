@@ -1,0 +1,14 @@
+{
+  "claim_id": "CLM-2025-0014",
+  "file": "claims/CLM-2025-0014.pdf",
+  "layout": "form",
+  "fields": {
+    "policy_number": "DM-HLTH-2025-003",
+    "claimant_name": "Sofia Martinez",
+    "incident_date": "2025-02-10",
+    "amount": 12480.75,
+    "claim_type": "health_hospitalization"
+  },
+  "expected_failed_rules": [],
+  "expected_route": "auto_approved"
+}

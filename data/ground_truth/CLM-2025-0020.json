@@ -1,0 +1,16 @@
+{
+  "claim_id": "CLM-2025-0020",
+  "file": "claims/CLM-2025-0020.pdf",
+  "layout": "letter",
+  "fields": {
+    "policy_number": "DM-TRVL-2025-004",
+    "claimant_name": "Yui Tanaka",
+    "incident_date": "2025-08-05",
+    "amount": 23600.0,
+    "claim_type": "travel_medical"
+  },
+  "expected_failed_rules": [
+    "no_exclusion"
+  ],
+  "expected_route": "needs_review"
+}

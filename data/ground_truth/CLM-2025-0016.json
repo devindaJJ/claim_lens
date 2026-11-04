@@ -1,0 +1,16 @@
+{
+  "claim_id": "CLM-2025-0016",
+  "file": "claims/CLM-2025-0016.pdf",
+  "layout": "letter",
+  "fields": {
+    "policy_number": "DM-HLTH-2025-003",
+    "claimant_name": "Sofia Martinez",
+    "incident_date": "2025-09-03",
+    "amount": 3900.0,
+    "claim_type": "health_outpatient"
+  },
+  "expected_failed_rules": [
+    "no_exclusion"
+  ],
+  "expected_route": "needs_review"
+}

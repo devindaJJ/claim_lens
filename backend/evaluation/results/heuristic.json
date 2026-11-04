@@ -1,0 +1,1160 @@
+{
+  "extractor": "heuristic",
+  "model": null,
+  "generated_at": "2026-11-04T13:45:42+00:00",
+  "documents": 25,
+  "seconds": 4.0,
+  "confidence_threshold": 0.8,
+  "fields": {
+    "policy_number": {
+      "tp": 25,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "claimant_name": {
+      "tp": 25,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "incident_date": {
+      "tp": 25,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "amount": {
+      "tp": 24,
+      "fp": 0,
+      "fn": 0,
+      "tn": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "claim_type": {
+      "tp": 25,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "by_layout": {
+    "form": {
+      "correct": 55,
+      "total": 55
+    },
+    "letter": {
+      "correct": 40,
+      "total": 40
+    },
+    "scanned": {
+      "correct": 30,
+      "total": 30
+    }
+  },
+  "rules_exact_match": 0.84,
+  "routing": {
+    "tp": 13,
+    "fp": 3,
+    "fn": 1,
+    "tn": 8,
+    "review_recall": 0.9285714285714286,
+    "unsafe_auto_approvals": 1,
+    "unnecessary_reviews": 3
+  },
+  "confident_field_accuracy": 1.0,
+  "confident_field_share": 0.808,
+  "claims": [
+    {
+      "claim_id": "CLM-2025-0001",
+      "layout": "form",
+      "text_method": "pdf_text",
+      "fields": {
+        "policy_number": {
+          "predicted": "DM-AUTO-2025-001",
+          "truth": "DM-AUTO-2025-001",
+          "correct": true,
+          "confidence": 0.95
+        },
+        "claimant_name": {
+          "predicted": "Amara Perera",
+          "truth": "Amara Perera",
+          "correct": true,
+          "confidence": 0.92
+        },
+        "incident_date": {
+          "predicted": "2025-03-14",
+          "truth": "2025-03-14",
+          "correct": true,
+          "confidence": 0.92
+        },
+        "amount": {
+          "predicted": 4250.0,
+          "truth": 4250.0,
+          "correct": true,
+          "confidence": 0.92
+        },
+        "claim_type": {
+          "predicted": "auto_collision",
+          "truth": "auto_collision",
+          "correct": true,
+          "confidence": 0.9
+        }
+      },
+      "failed_rules": [],
+      "expected_failed_rules": [],
+      "route": "auto_approved",
+      "expected_route": "auto_approved"
+    },
+    {
+      "claim_id": "CLM-2025-0002",
+      "layout": "letter",
+      "text_method": "pdf_text",
+      "fields": {
+        "policy_number": {
+          "predicted": "DM-AUTO-2025-001",
+          "truth": "DM-AUTO-2025-001",
+          "correct": true,
+          "confidence": 0.95
+        },
+        "claimant_name": {
+          "predicted": "Nuwan Perera",
+          "truth": "Nuwan Perera",
+          "correct": true,
+          "confidence": 0.8
+        },
+        "incident_date": {
+          "predicted": "2025-06-02",
+          "truth": "2025-06-02",
+          "correct": true,
+          "confidence": 0.75
+        },
+        "amount": {
+          "predicted": 1180.5,
+          "truth": 1180.5,
+          "correct": true,
+          "confidence": 0.75
+        },
+        "claim_type": {
+          "predicted": "auto_glass",
+          "truth": "auto_glass",
+          "correct": true,
+          "confidence": 0.75
+        }
+      },
+      "failed_rules": [],
+      "expected_failed_rules": [],
+      "route": "needs_review",
+      "expected_route": "auto_approved"
+    },
+    {
+      "claim_id": "CLM-2025-0003",
+      "layout": "scanned",
+      "text_method": "ocr",
+      "fields": {
+        "policy_number": {
+          "predicted": "DM-AUTO-2025-001",
+          "truth": "DM-AUTO-2025-001",
+          "correct": true,
+          "confidence": 0.931
+        },
+        "claimant_name": {
+          "predicted": "Amara Perera",
+          "truth": "Amara Perera",
+          "correct": true,
+          "confidence": 0.901
+        },
+        "incident_date": {
+          "predicted": "2025-08-21",
+          "truth": "2025-08-21",
+          "correct": true,
+          "confidence": 0.901
+        },
+        "amount": {
+          "predicted": 27900.0,
+          "truth": 27900.0,
+          "correct": true,
+          "confidence": 0.901
+        },
+        "claim_type": {
+          "predicted": "auto_collision",
+          "truth": "auto_collision",
+          "correct": true,
+          "confidence": 0.882
+        }
+      },
+      "failed_rules": [
+        "within_limit"
+      ],
+      "expected_failed_rules": [
+        "within_limit"
+      ],
+      "route": "needs_review",
+      "expected_route": "needs_review"
+    },
+    {
+      "claim_id": "CLM-2025-0004",
+      "layout": "form",
+      "text_method": "pdf_text",
+      "fields": {
+        "policy_number": {
+          "predicted": "DM-AUTO-2025-001",
+          "truth": "DM-AUTO-2025-001",
+          "correct": true,
+          "confidence": 0.95
+        },
+        "claimant_name": {
+          "predicted": "Amara Perera",
+          "truth": "Amara Perera",
+          "correct": true,
+          "confidence": 0.92
+        },
+        "incident_date": {
+          "predicted": "2026-01-09",
+          "truth": "2026-01-09",
+          "correct": true,
+          "confidence": 0.92
+        },
+        "amount": {
+          "predicted": 3400.0,
+          "truth": 3400.0,
+          "correct": true,
+          "confidence": 0.92
+        },
+        "claim_type": {
+          "predicted": "auto_collision",
+          "truth": "auto_collision",
+          "correct": true,
+          "confidence": 0.9
+        }
+      },
+      "failed_rules": [
+        "incident_in_period"
+      ],
+      "expected_failed_rules": [
+        "incident_in_period"
+      ],
+      "route": "needs_review",
+      "expected_route": "needs_review"
+    },
+    {
+      "claim_id": "CLM-2025-0005",
+      "layout": "letter",
+      "text_method": "pdf_text",
+      "fields": {
+        "policy_number": {
+          "predicted": "DM-AUTO-2025-001",
+          "truth": "DM-AUTO-2025-001",
+          "correct": true,
+          "confidence": 0.95
+        },
+        "claimant_name": {
+          "predicted": "Nuwan Perera",
+          "truth": "Nuwan Perera",
+          "correct": true,
+          "confidence": 0.8
+        },
+        "incident_date": {
+          "predicted": "2025-09-30",
+          "truth": "2025-09-30",
+          "correct": true,
+          "confidence": 0.75
+        },
+        "amount": {
+          "predicted": 8750.0,
+          "truth": 8750.0,
+          "correct": true,
+          "confidence": 0.75
+        },
+        "claim_type": {
+          "predicted": "auto_collision",
+          "truth": "auto_collision",
+          "correct": true,
+          "confidence": 0.75
+        }
+      },
+      "failed_rules": [
+        "no_exclusion"
+      ],
+      "expected_failed_rules": [
+        "no_exclusion"
+      ],
+      "route": "needs_review",
+      "expected_route": "needs_review"
+    },
+    {
+      "claim_id": "CLM-2025-0006",
+      "layout": "form",
+      "text_method": "pdf_text",
+      "fields": {
+        "policy_number": {
+          "predicted": "DM-AUTO-2025-001",
+          "truth": "DM-AUTO-2025-001",
+          "correct": true,
+          "confidence": 0.95
+        },
+        "claimant_name": {
+          "predicted": "Kasun Silva",
+          "truth": "Kasun Silva",
+          "correct": true,
+          "confidence": 0.92
+        },
+        "incident_date": {
+          "predicted": "2025-05-05",
+          "truth": "2025-05-05",
+          "correct": true,
+          "confidence": 0.92
+        },
+        "amount": {
+          "predicted": 18000.0,
+          "truth": 18000.0,
+          "correct": true,
+          "confidence": 0.92
+        },
+        "claim_type": {
+          "predicted": "auto_theft",
+          "truth": "auto_theft",
+          "correct": true,
+          "confidence": 0.9
+        }
+      },
+      "failed_rules": [
+        "claimant_insured"
+      ],
+      "expected_failed_rules": [
+        "claimant_insured"
+      ],
+      "route": "needs_review",
+      "expected_route": "needs_review"
+    },
+    {
+      "claim_id": "CLM-2025-0007",
+      "layout": "scanned",
+      "text_method": "ocr",
+      "fields": {
+        "policy_number": {
+          "predicted": "DM-AUTO-2025-001",
+          "truth": "DM-AUTO-2025-001",
+          "correct": true,
+          "confidence": 0.93
+        },
+        "claimant_name": {
+          "predicted": "Amara Perera",
+          "truth": "Amara Perera",
+          "correct": true,
+          "confidence": 0.901
+        },
+        "incident_date": {
+          "predicted": "2025-11-11",
+          "truth": "2025-11-11",
+          "correct": true,
+          "confidence": 0.901
+        },
+        "amount": {
+          "predicted": 22500.0,
+          "truth": 22500.0,
+          "correct": true,
+          "confidence": 0.901
+        },
+        "claim_type": {
+          "predicted": "auto_theft",
+          "truth": "auto_theft",
+          "correct": true,
+          "confidence": 0.881
+        }
+      },
+      "failed_rules": [],
+      "expected_failed_rules": [],
+      "route": "auto_approved",
+      "expected_route": "auto_approved"
+    },
+    {
+      "claim_id": "CLM-2025-0008",
+      "layout": "form",
+      "text_method": "pdf_text",
+      "fields": {
+        "policy_number": {
+          "predicted": "DM-HOME-2025-002",
+          "truth": "DM-HOME-2025-002",
+          "correct": true,
+          "confidence": 0.95
+        },
+        "claimant_name": {
+          "predicted": "Daniel Okafor",
+          "truth": "Daniel Okafor",
+          "correct": true,
+          "confidence": 0.92
+        },
+        "incident_date": {
+          "predicted": "2025-04-22",
+          "truth": "2025-04-22",
+          "correct": true,
+          "confidence": 0.92
+        },
+        "amount": {
+          "predicted": 6320.0,
+          "truth": 6320.0,
+          "correct": true,
+          "confidence": 0.92
+        },
+        "claim_type": {
+          "predicted": "home_water_damage",
+          "truth": "home_water_damage",
+          "correct": true,
+          "confidence": 0.9
+        }
+      },
+      "failed_rules": [
+        "no_exclusion"
+      ],
+      "expected_failed_rules": [],
+      "route": "needs_review",
+      "expected_route": "auto_approved"
+    },
+    {
+      "claim_id": "CLM-2025-0009",
+      "layout": "letter",
+      "text_method": "pdf_text",
+      "fields": {
+        "policy_number": {
+          "predicted": "DM-HOME-2025-002",
+          "truth": "DM-HOME-2025-002",
+          "correct": true,
+          "confidence": 0.95
+        },
+        "claimant_name": {
+          "predicted": "Grace Okafor",
+          "truth": "Grace Okafor",
+          "correct": true,
+          "confidence": 0.8
+        },
+        "incident_date": {
+          "predicted": "2025-07-04",
+          "truth": "2025-07-04",
+          "correct": true,
+          "confidence": 0.75
+        },
+        "amount": {
+          "predicted": 42000.0,
+          "truth": 42000.0,
+          "correct": true,
+          "confidence": 0.75
+        },
+        "claim_type": {
+          "predicted": "home_fire",
+          "truth": "home_fire",
+          "correct": true,
+          "confidence": 0.75
+        }
+      },
+      "failed_rules": [],
+      "expected_failed_rules": [],
+      "route": "needs_review",
+      "expected_route": "auto_approved"
+    },
+    {
+      "claim_id": "CLM-2025-0010",
+      "layout": "scanned",
+      "text_method": "ocr",
+      "fields": {
+        "policy_number": {
+          "predicted": "DM-HOME-2025-002",
+          "truth": "DM-HOME-2025-002",
+          "correct": true,
+          "confidence": 0.928
+        },
+        "claimant_name": {
+          "predicted": "Daniel Okafor",
+          "truth": "Daniel Okafor",
+          "correct": true,
+          "confidence": 0.899
+        },
+        "incident_date": {
+          "predicted": "2025-10-18",
+          "truth": "2025-10-18",
+          "correct": true,
+          "confidence": 0.899
+        },
+        "amount": {
+          "predicted": 9800.0,
+          "truth": 9800.0,
+          "correct": true,
+          "confidence": 0.899
+        },
+        "claim_type": {
+          "predicted": "home_water_damage",
+          "truth": "home_water_damage",
+          "correct": true,
+          "confidence": 0.879
+        }
+      },
+      "failed_rules": [],
+      "expected_failed_rules": [
+        "no_exclusion"
+      ],
+      "route": "auto_approved",
+      "expected_route": "needs_review"
+    },
+    {
+      "claim_id": "CLM-2025-0011",
+      "layout": "form",
+      "text_method": "pdf_text",
+      "fields": {
+        "policy_number": {
+          "predicted": "DM-HOME-2025-002",
+          "truth": "DM-HOME-2025-002",
+          "correct": true,
+          "confidence": 0.95
+        },
+        "claimant_name": {
+          "predicted": "Daniel Okafor",
+          "truth": "Daniel Okafor",
+          "correct": true,
+          "confidence": 0.92
+        },
+        "incident_date": {
+          "predicted": "2025-02-28",
+          "truth": "2025-02-28",
+          "correct": true,
+          "confidence": 0.92
+        },
+        "amount": {
+          "predicted": 2300.0,
+          "truth": 2300.0,
+          "correct": true,
+          "confidence": 0.92
+        },
+        "claim_type": {
+          "predicted": "home_theft",
+          "truth": "home_theft",
+          "correct": true,
+          "confidence": 0.9
+        }
+      },
+      "failed_rules": [
+        "incident_in_period"
+      ],
+      "expected_failed_rules": [
+        "incident_in_period"
+      ],
+      "route": "needs_review",
+      "expected_route": "needs_review"
+    },
+    {
+      "claim_id": "CLM-2025-0012",
+      "layout": "letter",
+      "text_method": "pdf_text",
+      "fields": {
+        "policy_number": {
+          "predicted": "DM-HOME-2025-002",
+          "truth": "DM-HOME-2025-002",
+          "correct": true,
+          "confidence": 0.95
+        },
+        "claimant_name": {
+          "predicted": "Grace Okafor",
+          "truth": "Grace Okafor",
+          "correct": true,
+          "confidence": 0.8
+        },
+        "incident_date": {
+          "predicted": "2025-12-01",
+          "truth": "2025-12-01",
+          "correct": true,
+          "confidence": 0.75
+        },
+        "amount": {
+          "predicted": 12400.0,
+          "truth": 12400.0,
+          "correct": true,
+          "confidence": 0.75
+        },
+        "claim_type": {
+          "predicted": "home_theft",
+          "truth": "home_theft",
+          "correct": true,
+          "confidence": 0.75
+        }
+      },
+      "failed_rules": [
+        "within_limit"
+      ],
+      "expected_failed_rules": [
+        "within_limit"
+      ],
+      "route": "needs_review",
+      "expected_route": "needs_review"
+    },
+    {
+      "claim_id": "CLM-2025-0013",
+      "layout": "form",
+      "text_method": "pdf_text",
+      "fields": {
+        "policy_number": {
+          "predicted": "DM-HOME-2025-002",
+          "truth": "DM-HOME-2025-002",
+          "correct": true,
+          "confidence": 0.95
+        },
+        "claimant_name": {
+          "predicted": "Daniel Okafor",
+          "truth": "Daniel Okafor",
+          "correct": true,
+          "confidence": 0.92
+        },
+        "incident_date": {
+          "predicted": "2026-01-15",
+          "truth": "2026-01-15",
+          "correct": true,
+          "confidence": 0.92
+        },
+        "amount": {
+          "predicted": 3150.0,
+          "truth": 3150.0,
+          "correct": true,
+          "confidence": 0.92
+        },
+        "claim_type": {
+          "predicted": "home_water_damage",
+          "truth": "home_water_damage",
+          "correct": true,
+          "confidence": 0.9
+        }
+      },
+      "failed_rules": [],
+      "expected_failed_rules": [],
+      "route": "auto_approved",
+      "expected_route": "auto_approved"
+    },
+    {
+      "claim_id": "CLM-2025-0014",
+      "layout": "form",
+      "text_method": "pdf_text",
+      "fields": {
+        "policy_number": {
+          "predicted": "DM-HLTH-2025-003",
+          "truth": "DM-HLTH-2025-003",
+          "correct": true,
+          "confidence": 0.95
+        },
+        "claimant_name": {
+          "predicted": "Sofia Martinez",
+          "truth": "Sofia Martinez",
+          "correct": true,
+          "confidence": 0.92
+        },
+        "incident_date": {
+          "predicted": "2025-02-10",
+          "truth": "2025-02-10",
+          "correct": true,
+          "confidence": 0.92
+        },
+        "amount": {
+          "predicted": 12480.75,
+          "truth": 12480.75,
+          "correct": true,
+          "confidence": 0.92
+        },
+        "claim_type": {
+          "predicted": "health_hospitalization",
+          "truth": "health_hospitalization",
+          "correct": true,
+          "confidence": 0.9
+        }
+      },
+      "failed_rules": [],
+      "expected_failed_rules": [],
+      "route": "auto_approved",
+      "expected_route": "auto_approved"
+    },
+    {
+      "claim_id": "CLM-2025-0015",
+      "layout": "scanned",
+      "text_method": "ocr",
+      "fields": {
+        "policy_number": {
+          "predicted": "DM-HLTH-2025-003",
+          "truth": "DM-HLTH-2025-003",
+          "correct": true,
+          "confidence": 0.927
+        },
+        "claimant_name": {
+          "predicted": "Lucas Martinez",
+          "truth": "Lucas Martinez",
+          "correct": true,
+          "confidence": 0.898
+        },
+        "incident_date": {
+          "predicted": "2025-05-19",
+          "truth": "2025-05-19",
+          "correct": true,
+          "confidence": 0.898
+        },
+        "amount": {
+          "predicted": 640.0,
+          "truth": 640.0,
+          "correct": true,
+          "confidence": 0.898
+        },
+        "claim_type": {
+          "predicted": "health_dental",
+          "truth": "health_dental",
+          "correct": true,
+          "confidence": 0.879
+        }
+      },
+      "failed_rules": [],
+      "expected_failed_rules": [],
+      "route": "auto_approved",
+      "expected_route": "auto_approved"
+    },
+    {
+      "claim_id": "CLM-2025-0016",
+      "layout": "letter",
+      "text_method": "pdf_text",
+      "fields": {
+        "policy_number": {
+          "predicted": "DM-HLTH-2025-003",
+          "truth": "DM-HLTH-2025-003",
+          "correct": true,
+          "confidence": 0.95
+        },
+        "claimant_name": {
+          "predicted": "Sofia Martinez",
+          "truth": "Sofia Martinez",
+          "correct": true,
+          "confidence": 0.8
+        },
+        "incident_date": {
+          "predicted": "2025-09-03",
+          "truth": "2025-09-03",
+          "correct": true,
+          "confidence": 0.75
+        },
+        "amount": {
+          "predicted": 3900.0,
+          "truth": 3900.0,
+          "correct": true,
+          "confidence": 0.75
+        },
+        "claim_type": {
+          "predicted": "health_outpatient",
+          "truth": "health_outpatient",
+          "correct": true,
+          "confidence": 0.75
+        }
+      },
+      "failed_rules": [],
+      "expected_failed_rules": [
+        "no_exclusion"
+      ],
+      "route": "needs_review",
+      "expected_route": "needs_review"
+    },
+    {
+      "claim_id": "CLM-2025-0017",
+      "layout": "form",
+      "text_method": "pdf_text",
+      "fields": {
+        "policy_number": {
+          "predicted": "DM-HLTH-2025-003",
+          "truth": "DM-HLTH-2025-003",
+          "correct": true,
+          "confidence": 0.95
+        },
+        "claimant_name": {
+          "predicted": "Sofia Martinez",
+          "truth": "Sofia Martinez",
+          "correct": true,
+          "confidence": 0.92
+        },
+        "incident_date": {
+          "predicted": "2025-11-27",
+          "truth": "2025-11-27",
+          "correct": true,
+          "confidence": 0.92
+        },
+        "amount": {
+          "predicted": 2150.0,
+          "truth": 2150.0,
+          "correct": true,
+          "confidence": 0.92
+        },
+        "claim_type": {
+          "predicted": "health_dental",
+          "truth": "health_dental",
+          "correct": true,
+          "confidence": 0.9
+        }
+      },
+      "failed_rules": [
+        "within_limit"
+      ],
+      "expected_failed_rules": [
+        "within_limit"
+      ],
+      "route": "needs_review",
+      "expected_route": "needs_review"
+    },
+    {
+      "claim_id": "CLM-2025-0018",
+      "layout": "letter",
+      "text_method": "pdf_text",
+      "fields": {
+        "policy_number": {
+          "predicted": "DM-HLTH-2025-003",
+          "truth": "DM-HLTH-2025-003",
+          "correct": true,
+          "confidence": 0.95
+        },
+        "claimant_name": {
+          "predicted": "Lucas Martinez",
+          "truth": "Lucas Martinez",
+          "correct": true,
+          "confidence": 0.8
+        },
+        "incident_date": {
+          "predicted": "2025-04-08",
+          "truth": "2025-04-08",
+          "correct": true,
+          "confidence": 0.75
+        },
+        "amount": {
+          "predicted": null,
+          "truth": null,
+          "correct": true,
+          "confidence": 0.0
+        },
+        "claim_type": {
+          "predicted": "health_outpatient",
+          "truth": "health_outpatient",
+          "correct": true,
+          "confidence": 0.75
+        }
+      },
+      "failed_rules": [
+        "required_fields"
+      ],
+      "expected_failed_rules": [
+        "required_fields"
+      ],
+      "route": "needs_review",
+      "expected_route": "needs_review"
+    },
+    {
+      "claim_id": "CLM-2025-0019",
+      "layout": "form",
+      "text_method": "pdf_text",
+      "fields": {
+        "policy_number": {
+          "predicted": "DM-TRVL-2025-004",
+          "truth": "DM-TRVL-2025-004",
+          "correct": true,
+          "confidence": 0.95
+        },
+        "claimant_name": {
+          "predicted": "Kenji Tanaka",
+          "truth": "Kenji Tanaka",
+          "correct": true,
+          "confidence": 0.92
+        },
+        "incident_date": {
+          "predicted": "2025-07-12",
+          "truth": "2025-07-12",
+          "correct": true,
+          "confidence": 0.92
+        },
+        "amount": {
+          "predicted": 1870.0,
+          "truth": 1870.0,
+          "correct": true,
+          "confidence": 0.92
+        },
+        "claim_type": {
+          "predicted": "travel_baggage",
+          "truth": "travel_baggage",
+          "correct": true,
+          "confidence": 0.9
+        }
+      },
+      "failed_rules": [],
+      "expected_failed_rules": [],
+      "route": "auto_approved",
+      "expected_route": "auto_approved"
+    },
+    {
+      "claim_id": "CLM-2025-0020",
+      "layout": "letter",
+      "text_method": "pdf_text",
+      "fields": {
+        "policy_number": {
+          "predicted": "DM-TRVL-2025-004",
+          "truth": "DM-TRVL-2025-004",
+          "correct": true,
+          "confidence": 0.95
+        },
+        "claimant_name": {
+          "predicted": "Yui Tanaka",
+          "truth": "Yui Tanaka",
+          "correct": true,
+          "confidence": 0.8
+        },
+        "incident_date": {
+          "predicted": "2025-08-05",
+          "truth": "2025-08-05",
+          "correct": true,
+          "confidence": 0.75
+        },
+        "amount": {
+          "predicted": 23600.0,
+          "truth": 23600.0,
+          "correct": true,
+          "confidence": 0.75
+        },
+        "claim_type": {
+          "predicted": "travel_medical",
+          "truth": "travel_medical",
+          "correct": true,
+          "confidence": 0.75
+        }
+      },
+      "failed_rules": [],
+      "expected_failed_rules": [
+        "no_exclusion"
+      ],
+      "route": "needs_review",
+      "expected_route": "needs_review"
+    },
+    {
+      "claim_id": "CLM-2025-0021",
+      "layout": "scanned",
+      "text_method": "ocr",
+      "fields": {
+        "policy_number": {
+          "predicted": "DM-TRVL-2025-004",
+          "truth": "DM-TRVL-2025-004",
+          "correct": true,
+          "confidence": 0.927
+        },
+        "claimant_name": {
+          "predicted": "Kenji Tanaka",
+          "truth": "Kenji Tanaka",
+          "correct": true,
+          "confidence": 0.898
+        },
+        "incident_date": {
+          "predicted": "2025-09-14",
+          "truth": "2025-09-14",
+          "correct": true,
+          "confidence": 0.898
+        },
+        "amount": {
+          "predicted": 3200.0,
+          "truth": 3200.0,
+          "correct": true,
+          "confidence": 0.898
+        },
+        "claim_type": {
+          "predicted": "travel_cancellation",
+          "truth": "travel_cancellation",
+          "correct": true,
+          "confidence": 0.878
+        }
+      },
+      "failed_rules": [
+        "incident_in_period"
+      ],
+      "expected_failed_rules": [
+        "incident_in_period"
+      ],
+      "route": "needs_review",
+      "expected_route": "needs_review"
+    },
+    {
+      "claim_id": "CLM-2025-0022",
+      "layout": "form",
+      "text_method": "pdf_text",
+      "fields": {
+        "policy_number": {
+          "predicted": "DM-TRVL-2025-004",
+          "truth": "DM-TRVL-2025-004",
+          "correct": true,
+          "confidence": 0.95
+        },
+        "claimant_name": {
+          "predicted": "Kenji Tanaka",
+          "truth": "Kenji Tanaka",
+          "correct": true,
+          "confidence": 0.92
+        },
+        "incident_date": {
+          "predicted": "2025-06-20",
+          "truth": "2025-06-20",
+          "correct": true,
+          "confidence": 0.92
+        },
+        "amount": {
+          "predicted": 3750.0,
+          "truth": 3750.0,
+          "correct": true,
+          "confidence": 0.92
+        },
+        "claim_type": {
+          "predicted": "travel_cancellation",
+          "truth": "travel_cancellation",
+          "correct": true,
+          "confidence": 0.9
+        }
+      },
+      "failed_rules": [],
+      "expected_failed_rules": [],
+      "route": "auto_approved",
+      "expected_route": "auto_approved"
+    },
+    {
+      "claim_id": "CLM-2025-0023",
+      "layout": "form",
+      "text_method": "pdf_text",
+      "fields": {
+        "policy_number": {
+          "predicted": "DM-TRVL-2024-019",
+          "truth": "DM-TRVL-2024-019",
+          "correct": true,
+          "confidence": 0.95
+        },
+        "claimant_name": {
+          "predicted": "Haruto Sato",
+          "truth": "Haruto Sato",
+          "correct": true,
+          "confidence": 0.92
+        },
+        "incident_date": {
+          "predicted": "2025-07-01",
+          "truth": "2025-07-01",
+          "correct": true,
+          "confidence": 0.92
+        },
+        "amount": {
+          "predicted": 900.0,
+          "truth": 900.0,
+          "correct": true,
+          "confidence": 0.92
+        },
+        "claim_type": {
+          "predicted": "travel_baggage",
+          "truth": "travel_baggage",
+          "correct": true,
+          "confidence": 0.9
+        }
+      },
+      "failed_rules": [
+        "policy_found"
+      ],
+      "expected_failed_rules": [
+        "policy_found"
+      ],
+      "route": "needs_review",
+      "expected_route": "needs_review"
+    },
+    {
+      "claim_id": "CLM-2025-0024",
+      "layout": "letter",
+      "text_method": "pdf_text",
+      "fields": {
+        "policy_number": {
+          "predicted": "DM-TRVL-2025-004",
+          "truth": "DM-TRVL-2025-004",
+          "correct": true,
+          "confidence": 0.95
+        },
+        "claimant_name": {
+          "predicted": "Yui Tanaka",
+          "truth": "Yui Tanaka",
+          "correct": true,
+          "confidence": 0.8
+        },
+        "incident_date": {
+          "predicted": "2025-06-28",
+          "truth": "2025-06-28",
+          "correct": true,
+          "confidence": 0.75
+        },
+        "amount": {
+          "predicted": 2950.0,
+          "truth": 2950.0,
+          "correct": true,
+          "confidence": 0.75
+        },
+        "claim_type": {
+          "predicted": "travel_baggage",
+          "truth": "travel_baggage",
+          "correct": true,
+          "confidence": 0.75
+        }
+      },
+      "failed_rules": [
+        "within_limit"
+      ],
+      "expected_failed_rules": [
+        "within_limit"
+      ],
+      "route": "needs_review",
+      "expected_route": "needs_review"
+    },
+    {
+      "claim_id": "CLM-2025-0025",
+      "layout": "scanned",
+      "text_method": "ocr",
+      "fields": {
+        "policy_number": {
+          "predicted": "DM-TRVL-2025-004",
+          "truth": "DM-TRVL-2025-004",
+          "correct": true,
+          "confidence": 0.931
+        },
+        "claimant_name": {
+          "predicted": "Kenji Tanaka",
+          "truth": "Kenji Tanaka",
+          "correct": true,
+          "confidence": 0.901
+        },
+        "incident_date": {
+          "predicted": "2025-07-30",
+          "truth": "2025-07-30",
+          "correct": true,
+          "confidence": 0.901
+        },
+        "amount": {
+          "predicted": 8400.0,
+          "truth": 8400.0,
+          "correct": true,
+          "confidence": 0.901
+        },
+        "claim_type": {
+          "predicted": "travel_medical",
+          "truth": "travel_medical",
+          "correct": true,
+          "confidence": 0.882
+        }
+      },
+      "failed_rules": [],
+      "expected_failed_rules": [],
+      "route": "auto_approved",
+      "expected_route": "auto_approved"
+    }
+  ]
+}

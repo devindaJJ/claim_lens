@@ -1,0 +1,16 @@
+{
+  "claim_id": "CLM-2025-0018",
+  "file": "claims/CLM-2025-0018.pdf",
+  "layout": "letter",
+  "fields": {
+    "policy_number": "DM-HLTH-2025-003",
+    "claimant_name": "Lucas Martinez",
+    "incident_date": "2025-04-08",
+    "amount": null,
+    "claim_type": "health_outpatient"
+  },
+  "expected_failed_rules": [
+    "required_fields"
+  ],
+  "expected_route": "needs_review"
+}

@@ -1,0 +1,16 @@
+{
+  "claim_id": "CLM-2025-0004",
+  "file": "claims/CLM-2025-0004.pdf",
+  "layout": "form",
+  "fields": {
+    "policy_number": "DM-AUTO-2025-001",
+    "claimant_name": "Amara Perera",
+    "incident_date": "2026-01-09",
+    "amount": 3400.0,
+    "claim_type": "auto_collision"
+  },
+  "expected_failed_rules": [
+    "incident_in_period"
+  ],
+  "expected_route": "needs_review"
+}

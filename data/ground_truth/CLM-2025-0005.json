@@ -1,0 +1,16 @@
+{
+  "claim_id": "CLM-2025-0005",
+  "file": "claims/CLM-2025-0005.pdf",
+  "layout": "letter",
+  "fields": {
+    "policy_number": "DM-AUTO-2025-001",
+    "claimant_name": "Nuwan Perera",
+    "incident_date": "2025-09-30",
+    "amount": 8750.0,
+    "claim_type": "auto_collision"
+  },
+  "expected_failed_rules": [
+    "no_exclusion"
+  ],
+  "expected_route": "needs_review"
+}

@@ -1,0 +1,14 @@
+{
+  "claim_id": "CLM-2025-0013",
+  "file": "claims/CLM-2025-0013.pdf",
+  "layout": "form",
+  "fields": {
+    "policy_number": "DM-HOME-2025-002",
+    "claimant_name": "Daniel Okafor",
+    "incident_date": "2026-01-15",
+    "amount": 3150.0,
+    "claim_type": "home_water_damage"
+  },
+  "expected_failed_rules": [],
+  "expected_route": "auto_approved"
+}

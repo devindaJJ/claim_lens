@@ -1,0 +1,16 @@
+{
+  "claim_id": "CLM-2025-0017",
+  "file": "claims/CLM-2025-0017.pdf",
+  "layout": "form",
+  "fields": {
+    "policy_number": "DM-HLTH-2025-003",
+    "claimant_name": "Sofia Martinez",
+    "incident_date": "2025-11-27",
+    "amount": 2150.0,
+    "claim_type": "health_dental"
+  },
+  "expected_failed_rules": [
+    "within_limit"
+  ],
+  "expected_route": "needs_review"
+}

@@ -1,0 +1,16 @@
+{
+  "claim_id": "CLM-2025-0021",
+  "file": "claims/CLM-2025-0021.pdf",
+  "layout": "scanned",
+  "fields": {
+    "policy_number": "DM-TRVL-2025-004",
+    "claimant_name": "Kenji Tanaka",
+    "incident_date": "2025-09-14",
+    "amount": 3200.0,
+    "claim_type": "travel_cancellation"
+  },
+  "expected_failed_rules": [
+    "incident_in_period"
+  ],
+  "expected_route": "needs_review"
+}

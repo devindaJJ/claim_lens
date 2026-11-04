@@ -1,0 +1,72 @@
+name: claimlens
+
+x-backend: &backend
+  build: ./backend
+  env_file:
+    - path: .env
+      required: false
+  environment:
+    DATABASE_URL: postgresql+psycopg://claimlens:claimlens@db:5432/claimlens
+    REDIS_URL: redis://redis:6379/0
+    STORAGE_DIR: /storage
+    DATA_DIR: /data
+    CORS_ORIGINS: '["http://localhost:5173","http://localhost:8080"]'
+  volumes:
+    - storage:/storage
+    - ./data:/data:ro
+    - ./backend/evaluation/results:/app/evaluation/results
+    - ./README.md:/README.md
+  depends_on:
+    db:
+      condition: service_healthy
+    redis:
+      condition: service_healthy
+
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: claimlens
+      POSTGRES_PASSWORD: claimlens
+      POSTGRES_DB: claimlens
+    ports: ["${DB_PORT:-5432}:5432"]
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U claimlens"]
+      interval: 3s
+      retries: 20
+
+  redis:
+    image: redis:7-alpine
+    ports: ["${REDIS_PORT:-6379}:6379"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 3s
+      retries: 20
+
+  api:
+    <<: *backend
+    command: sh -c "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000"
+    ports: ["${API_PORT:-8000}:8000"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health')"]
+      interval: 5s
+      retries: 30
+
+  worker:
+    <<: *backend
+    command: celery -A app.worker.celery_app worker --loglevel=INFO --concurrency=2
+    depends_on:
+      api:
+        condition: service_healthy
+
+  frontend:
+    build: ./frontend
+    ports: ["${UI_PORT:-8080}:80"]
+    depends_on:
+      api:
+        condition: service_healthy
+
+volumes:
+  pgdata:
+  storage:

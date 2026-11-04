@@ -1,0 +1,14 @@
+{
+  "claim_id": "CLM-2025-0009",
+  "file": "claims/CLM-2025-0009.pdf",
+  "layout": "letter",
+  "fields": {
+    "policy_number": "DM-HOME-2025-002",
+    "claimant_name": "Grace Okafor",
+    "incident_date": "2025-07-04",
+    "amount": 42000.0,
+    "claim_type": "home_fire"
+  },
+  "expected_failed_rules": [],
+  "expected_route": "auto_approved"
+}

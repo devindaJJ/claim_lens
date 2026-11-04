@@ -1,0 +1,14 @@
+{
+  "claim_id": "CLM-2025-0015",
+  "file": "claims/CLM-2025-0015.pdf",
+  "layout": "scanned",
+  "fields": {
+    "policy_number": "DM-HLTH-2025-003",
+    "claimant_name": "Lucas Martinez",
+    "incident_date": "2025-05-19",
+    "amount": 640.0,
+    "claim_type": "health_dental"
+  },
+  "expected_failed_rules": [],
+  "expected_route": "auto_approved"
+}

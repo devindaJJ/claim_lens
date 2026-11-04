@@ -1,0 +1,14 @@
+{
+  "claim_id": "CLM-2025-0007",
+  "file": "claims/CLM-2025-0007.pdf",
+  "layout": "scanned",
+  "fields": {
+    "policy_number": "DM-AUTO-2025-001",
+    "claimant_name": "Amara Perera",
+    "incident_date": "2025-11-11",
+    "amount": 22500.0,
+    "claim_type": "auto_theft"
+  },
+  "expected_failed_rules": [],
+  "expected_route": "auto_approved"
+}

@@ -1,0 +1,16 @@
+{
+  "claim_id": "CLM-2025-0012",
+  "file": "claims/CLM-2025-0012.pdf",
+  "layout": "letter",
+  "fields": {
+    "policy_number": "DM-HOME-2025-002",
+    "claimant_name": "Grace Okafor",
+    "incident_date": "2025-12-01",
+    "amount": 12400.0,
+    "claim_type": "home_theft"
+  },
+  "expected_failed_rules": [
+    "within_limit"
+  ],
+  "expected_route": "needs_review"
+}

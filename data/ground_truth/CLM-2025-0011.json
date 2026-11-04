@@ -1,0 +1,16 @@
+{
+  "claim_id": "CLM-2025-0011",
+  "file": "claims/CLM-2025-0011.pdf",
+  "layout": "form",
+  "fields": {
+    "policy_number": "DM-HOME-2025-002",
+    "claimant_name": "Daniel Okafor",
+    "incident_date": "2025-02-28",
+    "amount": 2300.0,
+    "claim_type": "home_theft"
+  },
+  "expected_failed_rules": [
+    "incident_in_period"
+  ],
+  "expected_route": "needs_review"
+}

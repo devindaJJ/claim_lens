@@ -1,0 +1,14 @@
+{
+  "claim_id": "CLM-2025-0002",
+  "file": "claims/CLM-2025-0002.pdf",
+  "layout": "letter",
+  "fields": {
+    "policy_number": "DM-AUTO-2025-001",
+    "claimant_name": "Nuwan Perera",
+    "incident_date": "2025-06-02",
+    "amount": 1180.5,
+    "claim_type": "auto_glass"
+  },
+  "expected_failed_rules": [],
+  "expected_route": "auto_approved"
+}

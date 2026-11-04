@@ -1,0 +1,14 @@
+{
+  "claim_id": "CLM-2025-0019",
+  "file": "claims/CLM-2025-0019.pdf",
+  "layout": "form",
+  "fields": {
+    "policy_number": "DM-TRVL-2025-004",
+    "claimant_name": "Kenji Tanaka",
+    "incident_date": "2025-07-12",
+    "amount": 1870.0,
+    "claim_type": "travel_baggage"
+  },
+  "expected_failed_rules": [],
+  "expected_route": "auto_approved"
+}

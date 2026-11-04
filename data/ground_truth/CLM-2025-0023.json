@@ -1,0 +1,16 @@
+{
+  "claim_id": "CLM-2025-0023",
+  "file": "claims/CLM-2025-0023.pdf",
+  "layout": "form",
+  "fields": {
+    "policy_number": "DM-TRVL-2024-019",
+    "claimant_name": "Haruto Sato",
+    "incident_date": "2025-07-01",
+    "amount": 900.0,
+    "claim_type": "travel_baggage"
+  },
+  "expected_failed_rules": [
+    "policy_found"
+  ],
+  "expected_route": "needs_review"
+}

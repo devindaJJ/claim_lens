@@ -1,0 +1,14 @@
+{
+  "claim_id": "CLM-2025-0025",
+  "file": "claims/CLM-2025-0025.pdf",
+  "layout": "scanned",
+  "fields": {
+    "policy_number": "DM-TRVL-2025-004",
+    "claimant_name": "Kenji Tanaka",
+    "incident_date": "2025-07-30",
+    "amount": 8400.0,
+    "claim_type": "travel_medical"
+  },
+  "expected_failed_rules": [],
+  "expected_route": "auto_approved"
+}

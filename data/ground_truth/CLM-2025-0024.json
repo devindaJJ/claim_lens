@@ -1,0 +1,16 @@
+{
+  "claim_id": "CLM-2025-0024",
+  "file": "claims/CLM-2025-0024.pdf",
+  "layout": "letter",
+  "fields": {
+    "policy_number": "DM-TRVL-2025-004",
+    "claimant_name": "Yui Tanaka",
+    "incident_date": "2025-06-28",
+    "amount": 2950.0,
+    "claim_type": "travel_baggage"
+  },
+  "expected_failed_rules": [
+    "within_limit"
+  ],
+  "expected_route": "needs_review"
+}
